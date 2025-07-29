@@ -33,10 +33,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-// Your first API endpoint
-app.get('/api/hello', (req, res) => {
-  res.json({ greeting: 'hello API' });
-});
 
 app.post("/api/shorturl", async (req, res) => {
   try {
